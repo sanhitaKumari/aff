@@ -10,7 +10,7 @@ Previous installation for application setup required.
 npm install x-frame-options
 npm install strict-transport-security
 ```
-### Adding Max Limit HTTP Request
+## Adding Max Limit HTTP Request
 In pkg/server/src/app.ts
 ```typescript
 const app = express();
@@ -31,7 +31,7 @@ x-www-form-urlencoded
 Under Params create first key as 'TEST' and intoduce value greater or less than 2mb.
 After hitting send, "entity request too large" error is received if param value is greater than 2mb.
 
-### Adding Security Dev Flags
+## Adding Security Dev Flags
 In pkg/app/.env
 add
 ```
